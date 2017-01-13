@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios,'7.0'
+
+target 'Cleen' do
+
+pod 'AFNetworking'
+pod 'YYModel'
+pod 'SDWebImage'
+
+end
