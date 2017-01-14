@@ -1,2 +1,2 @@
 # Cleen
-A Demo
+A Demo for Cleen.
