@@ -26,15 +26,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Root View Controller-->
+        <!--Main-->
         <scene sceneID="DSV-fh-qFZ">
             <objects>
                 <tableViewController id="hxA-NN-2cZ" customClass="MainTableViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Root View Controller" id="6Br-bT-fej" userLabel="Main"/>
+                    <navigationItem key="navigationItem" title="Main" id="6Br-bT-fej" userLabel="Main"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVI-zZ-m4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="726"/>
+            <point key="canvasLocation" x="438" y="706"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yXI-4l-S55">

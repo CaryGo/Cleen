@@ -17,6 +17,13 @@
 		4A8624471E291BC60017D470 /* CleenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624461E291BC60017D470 /* CleenUITests.m */; };
 		4A8624561E291C490017D470 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624551E291C490017D470 /* MainTableViewController.m */; };
 		4A86245A1E291D740017D470 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8624591E291D740017D470 /* data.json */; };
+		4A8624621E2935DA0017D470 /* JSAttributeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86245F1E2935DA0017D470 /* JSAttributeLabel.m */; };
+		4A8624631E2935DA0017D470 /* JSLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624611E2935DA0017D470 /* JSLineLabel.m */; };
+		4A86246C1E2936E40017D470 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86246B1E2936E40017D470 /* Data.m */; };
+		4A86246F1E293EB20017D470 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86246E1E293EB20017D470 /* BaseTableViewCell.m */; };
+		4A8624721E293F240017D470 /* UIView+JSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624711E293F240017D470 /* UIView+JSAdditions.m */; };
+		4A8624751E293F4D0017D470 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624741E293F4D0017D470 /* MainCell.m */; };
+		4A8624791E29A3460017D470 /* UIImage+JSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624781E29A3460017D470 /* UIImage+JSAdditions.m */; };
 		762A226F4BAA724FE282BA75 /* libPods-Cleen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1945F25B86C5D62686C3D099 /* libPods-Cleen.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +65,21 @@
 		4A8624541E291C490017D470 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		4A8624551E291C490017D470 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		4A8624591E291D740017D470 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		4A86245B1E2927320017D470 /* CleenPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleenPrefix.pch; sourceTree = "<group>"; };
+		4A86245E1E2935DA0017D470 /* JSAttributeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAttributeLabel.h; sourceTree = "<group>"; };
+		4A86245F1E2935DA0017D470 /* JSAttributeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAttributeLabel.m; sourceTree = "<group>"; };
+		4A8624601E2935DA0017D470 /* JSLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLineLabel.h; sourceTree = "<group>"; };
+		4A8624611E2935DA0017D470 /* JSLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLineLabel.m; sourceTree = "<group>"; };
+		4A86246A1E2936E40017D470 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		4A86246B1E2936E40017D470 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		4A86246D1E293EB20017D470 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		4A86246E1E293EB20017D470 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		4A8624701E293F240017D470 /* UIView+JSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JSAdditions.h"; sourceTree = "<group>"; };
+		4A8624711E293F240017D470 /* UIView+JSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSAdditions.m"; sourceTree = "<group>"; };
+		4A8624731E293F4D0017D470 /* MainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
+		4A8624741E293F4D0017D470 /* MainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCell.m; sourceTree = "<group>"; };
+		4A8624771E29A3460017D470 /* UIImage+JSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JSAdditions.h"; sourceTree = "<group>"; };
+		4A8624781E29A3460017D470 /* UIImage+JSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSAdditions.m"; sourceTree = "<group>"; };
 		5BEBDD21BDDFCCCD6A7F82CE /* Pods-Cleen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cleen/Pods-Cleen.debug.xcconfig"; sourceTree = "<group>"; };
 		F2A50FB1F8AD3BA8B0B41114 /* Pods-Cleen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cleen/Pods-Cleen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,17 +143,10 @@
 		4A8624201E291BC60017D470 /* Cleen */ = {
 			isa = PBXGroup;
 			children = (
-				4A8624241E291BC60017D470 /* AppDelegate.h */,
-				4A8624251E291BC60017D470 /* AppDelegate.m */,
-				4A8624591E291D740017D470 /* data.json */,
-				4A8624541E291C490017D470 /* MainTableViewController.h */,
-				4A8624551E291C490017D470 /* MainTableViewController.m */,
-				4A8624271E291BC60017D470 /* ViewController.h */,
-				4A8624281E291BC60017D470 /* ViewController.m */,
-				4A86242A1E291BC60017D470 /* Main.storyboard */,
-				4A86242D1E291BC60017D470 /* Assets.xcassets */,
-				4A86242F1E291BC60017D470 /* LaunchScreen.storyboard */,
-				4A8624321E291BC60017D470 /* Info.plist */,
+				4A8624671E29361B0017D470 /* Main */,
+				4A86245C1E2935CA0017D470 /* Vendor */,
+				4A8624691E2936420017D470 /* Resources */,
+				4A8624681E2936390017D470 /* Others */,
 				4A8624211E291BC60017D470 /* Supporting Files */,
 			);
 			path = Cleen;
@@ -141,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8624221E291BC60017D470 /* main.m */,
+				4A86245B1E2927320017D470 /* CleenPrefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,6 +177,91 @@
 				4A8624481E291BC60017D470 /* Info.plist */,
 			);
 			path = CleenUITests;
+			sourceTree = "<group>";
+		};
+		4A86245C1E2935CA0017D470 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				4A8624701E293F240017D470 /* UIView+JSAdditions.h */,
+				4A8624711E293F240017D470 /* UIView+JSAdditions.m */,
+				4A8624771E29A3460017D470 /* UIImage+JSAdditions.h */,
+				4A8624781E29A3460017D470 /* UIImage+JSAdditions.m */,
+				4A86245D1E2935DA0017D470 /* JSLabel */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		4A86245D1E2935DA0017D470 /* JSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4A86245E1E2935DA0017D470 /* JSAttributeLabel.h */,
+				4A86245F1E2935DA0017D470 /* JSAttributeLabel.m */,
+				4A8624601E2935DA0017D470 /* JSLineLabel.h */,
+				4A8624611E2935DA0017D470 /* JSLineLabel.m */,
+			);
+			path = JSLabel;
+			sourceTree = "<group>";
+		};
+		4A8624641E2935E30017D470 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A86246A1E2936E40017D470 /* Data.h */,
+				4A86246B1E2936E40017D470 /* Data.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4A8624651E2935F70017D470 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A86246D1E293EB20017D470 /* BaseTableViewCell.h */,
+				4A86246E1E293EB20017D470 /* BaseTableViewCell.m */,
+				4A8624731E293F4D0017D470 /* MainCell.h */,
+				4A8624741E293F4D0017D470 /* MainCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4A8624661E2936040017D470 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A8624541E291C490017D470 /* MainTableViewController.h */,
+				4A8624551E291C490017D470 /* MainTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4A8624671E29361B0017D470 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4A8624241E291BC60017D470 /* AppDelegate.h */,
+				4A8624251E291BC60017D470 /* AppDelegate.m */,
+				4A8624661E2936040017D470 /* Controllers */,
+				4A8624651E2935F70017D470 /* Views */,
+				4A8624641E2935E30017D470 /* Models */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		4A8624681E2936390017D470 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4A8624271E291BC60017D470 /* ViewController.h */,
+				4A8624281E291BC60017D470 /* ViewController.m */,
+				4A86242A1E291BC60017D470 /* Main.storyboard */,
+				4A86242F1E291BC60017D470 /* LaunchScreen.storyboard */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		4A8624691E2936420017D470 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A86242D1E291BC60017D470 /* Assets.xcassets */,
+				4A8624321E291BC60017D470 /* Info.plist */,
+				4A8624591E291D740017D470 /* data.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		56E3A479468F9BA01520EBD4 /* Pods */ = {
@@ -360,8 +461,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8624751E293F4D0017D470 /* MainCell.m in Sources */,
 				4A8624561E291C490017D470 /* MainTableViewController.m in Sources */,
+				4A8624631E2935DA0017D470 /* JSLineLabel.m in Sources */,
+				4A8624791E29A3460017D470 /* UIImage+JSAdditions.m in Sources */,
+				4A8624721E293F240017D470 /* UIView+JSAdditions.m in Sources */,
+				4A8624621E2935DA0017D470 /* JSAttributeLabel.m in Sources */,
 				4A8624291E291BC60017D470 /* ViewController.m in Sources */,
+				4A86246F1E293EB20017D470 /* BaseTableViewCell.m in Sources */,
+				4A86246C1E2936E40017D470 /* Data.m in Sources */,
 				4A8624261E291BC60017D470 /* AppDelegate.m in Sources */,
 				4A8624231E291BC60017D470 /* main.m in Sources */,
 			);
@@ -512,6 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VW3WT544EU;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Cleen/CleenPrefix.pch";
 				INFOPLIST_FILE = Cleen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caryclould.Cleen;
@@ -525,6 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VW3WT544EU;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Cleen/CleenPrefix.pch";
 				INFOPLIST_FILE = Cleen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caryclould.Cleen;

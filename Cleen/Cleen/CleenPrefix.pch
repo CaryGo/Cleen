@@ -1,0 +1,24 @@
+//
+//  CleenPrefix.pch
+//  Cleen
+//
+//  Created by Cary on 2017/1/13.
+//  Copyright © 2017年 caryclould. All rights reserved.
+//
+
+#ifndef CleenPrefix_pch
+#define CleenPrefix_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+#import <YYModel.h>
+#import <UIImageView+WebCache.h>
+#import "UIView+JSAdditions.h"
+
+#endif
+
+#endif /* CleenPrefix_pch */
