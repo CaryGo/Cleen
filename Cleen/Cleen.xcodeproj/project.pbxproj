@@ -24,6 +24,7 @@
 		4A8624721E293F240017D470 /* UIView+JSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624711E293F240017D470 /* UIView+JSAdditions.m */; };
 		4A8624751E293F4D0017D470 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624741E293F4D0017D470 /* MainCell.m */; };
 		4A8624791E29A3460017D470 /* UIImage+JSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8624781E29A3460017D470 /* UIImage+JSAdditions.m */; };
+		4A86247D1E29AF080017D470 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A86247C1E29AF080017D470 /* HttpClient.m */; };
 		762A226F4BAA724FE282BA75 /* libPods-Cleen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1945F25B86C5D62686C3D099 /* libPods-Cleen.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		4A8624741E293F4D0017D470 /* MainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCell.m; sourceTree = "<group>"; };
 		4A8624771E29A3460017D470 /* UIImage+JSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JSAdditions.h"; sourceTree = "<group>"; };
 		4A8624781E29A3460017D470 /* UIImage+JSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSAdditions.m"; sourceTree = "<group>"; };
+		4A86247B1E29AF080017D470 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		4A86247C1E29AF080017D470 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
 		5BEBDD21BDDFCCCD6A7F82CE /* Pods-Cleen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cleen/Pods-Cleen.debug.xcconfig"; sourceTree = "<group>"; };
 		F2A50FB1F8AD3BA8B0B41114 /* Pods-Cleen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cleen/Pods-Cleen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +146,7 @@
 		4A8624201E291BC60017D470 /* Cleen */ = {
 			isa = PBXGroup;
 			children = (
+				4A86247A1E29AEE30017D470 /* Network */,
 				4A8624671E29361B0017D470 /* Main */,
 				4A86245C1E2935CA0017D470 /* Vendor */,
 				4A8624691E2936420017D470 /* Resources */,
@@ -262,6 +266,15 @@
 				4A8624591E291D740017D470 /* data.json */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		4A86247A1E29AEE30017D470 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A86247B1E29AF080017D470 /* HttpClient.h */,
+				4A86247C1E29AF080017D470 /* HttpClient.m */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		56E3A479468F9BA01520EBD4 /* Pods */ = {
@@ -467,6 +480,7 @@
 				4A8624791E29A3460017D470 /* UIImage+JSAdditions.m in Sources */,
 				4A8624721E293F240017D470 /* UIView+JSAdditions.m in Sources */,
 				4A8624621E2935DA0017D470 /* JSAttributeLabel.m in Sources */,
+				4A86247D1E29AF080017D470 /* HttpClient.m in Sources */,
 				4A8624291E291BC60017D470 /* ViewController.m in Sources */,
 				4A86246F1E293EB20017D470 /* BaseTableViewCell.m in Sources */,
 				4A86246C1E2936E40017D470 /* Data.m in Sources */,

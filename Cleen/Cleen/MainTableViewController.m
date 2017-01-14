@@ -10,6 +10,10 @@
 
 #import "Data.h"
 #import "MainCell.h"
+#import "HttpClient.h"
+#import <MJRefresh.h>
+
+#define request_url @"http://thoughtworks-ios.herokuapp.com/facts.json"
 
 @interface MainTableViewController ()
 
@@ -28,6 +32,36 @@
     [super loadView];
     
     [self loadData];
+    [self tableViewRefresh];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(requestData)];
+}
+
+- (void)tableViewRefresh{
+    __unsafe_unretained UITableView *tableView = self.tableView;
+    // 下拉刷新
+    MJRefreshNormalHeader *header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self requestData];
+        [UIApplication sharedApplication].statusBarHidden = NO;
+    }];
+    // 设置自动切换透明度(在导航栏下面自动隐藏)
+    header.automaticallyChangeAlpha = YES;
+    // 设置刷新控件
+    tableView.mj_header = header;
+}
+
+- (void)requestData{
+    __weak __typeof (self)weakSelf = self;
+    [HttpClient getWithURL:request_url params:nil success:^(id json) {
+        [weakSelf.tableView.mj_header endRefreshing];
+        //json解析model
+        Data * dataModel = [Data yy_modelWithJSON:json];
+        weakSelf.title = dataModel.title;
+        weakSelf.dataModel = dataModel;
+        [weakSelf.tableView reloadData];
+    } failure:^(NSError *error) {
+        [weakSelf.tableView.mj_header endRefreshing];
+        //
+    }];
 }
 
 /**

@@ -24,7 +24,7 @@
 
 - (UILabel *)titleL{
     if (!_titleL) {
-        _titleL = [[JSAttributeLabel alloc] initWithFrame:CGRectZero labelFont:[UIFont systemFontOfSize:CONTENT_SIZE] lineSpace:CONTENT_PADDING maxWidth:TITLE_WIDTH];
+        _titleL = [[JSAttributeLabel alloc] initWithFrame:CGRectZero labelFont:[UIFont systemFontOfSize:CONTENT_SIZE] lineSpace:TITLE_PADDING maxWidth:TITLE_WIDTH];
         _titleL.textColor = [UIColor blueColor];
     }
     return _titleL;
@@ -54,9 +54,6 @@
 }
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self.contentView addSubview:self.titleL];
-        [self.contentView addSubview:self.descL];
-        [self.contentView addSubview:self.imgHref];
     }
     return self;
 }
@@ -67,6 +64,16 @@
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
+}
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    for (UIView *view in self.contentView.subviews) {
+        [view removeFromSuperview];
+    }
+    [self.contentView addSubview:self.titleL];
+    [self.contentView addSubview:self.descL];
+    [self.contentView addSubview:self.imgHref];
+    
     RowType *row = self.row;
     
     self.titleL.labelText = row.title;
@@ -89,13 +96,14 @@
             strongSelf.imgHref.frame = CGRectMake(SCREEN_W-DEFAULT_PADDING-IMAGE_MAX_WIDTH, strongSelf.descL.top, IMAGE_MAX_WIDTH, imageHeight);
         }
     }];
+
 }
 
 
 + (CGFloat)cellHeightWithModel:(RowType *)row {
     CGFloat height = 0.0;
     if (row) {
-        CGSize titleLSize = [JSAttributeLabel getLabelSizeWithText:row.title labelFont:[UIFont systemFontOfSize:CONTENT_SIZE] lineSpace:CONTENT_PADDING maxWidth:TITLE_WIDTH];
+        CGSize titleLSize = [JSAttributeLabel getLabelSizeWithText:row.title labelFont:[UIFont systemFontOfSize:CONTENT_SIZE] lineSpace:TITLE_PADDING maxWidth:TITLE_WIDTH];
         CGSize descLSize = [JSAttributeLabel getLabelSizeWithText:row.desc labelFont:[UIFont systemFontOfSize:CONTENT_SIZE] lineSpace:CONTENT_PADDING maxWidth:DESC_WIDTH];
         if (descLSize.height < IMAGE_MAX_WIDTH) {
             descLSize.height = IMAGE_MAX_WIDTH;

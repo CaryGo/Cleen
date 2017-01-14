@@ -17,7 +17,8 @@
 #define SCREEN_W ([[UIScreen mainScreen] bounds].size.width)
 //间距  用于约束
 #define DEFAULT_PADDING 10
-#define CONTENT_PADDING 5
+#define TITLE_PADDING 5
+#define CONTENT_PADDING 2
 #define CONTENT_SIZE 14
 #define IMAGE_MAX_WIDTH 120
 #define TITLE_WIDTH (SCREEN_W - 2 * DEFAULT_PADDING)

@@ -7,5 +7,6 @@ target 'Cleen' do
 pod 'AFNetworking'
 pod 'YYModel'
 pod 'SDWebImage'
+pod 'MJRefresh'
 
 end
